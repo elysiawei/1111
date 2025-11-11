@@ -1,0 +1,128 @@
+/* ===== 基本設定 ===== */
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fffaf3;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* ===== 頁首 Hero ===== */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1602740289726-0d76c9c0c520?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  text-align: center;
+  padding: 25px 35px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ===== 行程介紹區 ===== */
+.intro {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #d2691e;
+  font-size: 2rem;
+  border-bottom: 3px solid #d2691e;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+/* 每個景點區塊 */
+.spot {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 20px;
+  background: #fff8ef;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.spot.reverse {
+  flex-direction: row-reverse;
+}
+
+.spot img {
+  width: 45%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.spot .text {
+  width: 55%;
+  text-align: left;
+}
+
+.spot h3 {
+  color: #ff7f50;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+/* ===== 地圖區 ===== */
+.map-section {
+  background: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* ===== 頁尾 ===== */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* ===== RWD 響應式 ===== */
+@media (max-width: 768px) {
+  .spot {
+    flex-direction: column;
+  }
+  .spot img, .spot .text {
+    width: 100%;
+  }
+}
